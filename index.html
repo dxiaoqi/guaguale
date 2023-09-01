@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="max-age=0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>十全十美-试刮</title>
+    <link rel="stylesheet" type="text/css" href="https://images.zhcw.com/gt/gglwx/h5/css/bootstrap.min.css?v=202301050948">
+    <link rel="stylesheet" type="text/css" href="https://images.zhcw.com/gt/gglwx/h5/css/nav.css?v=202301050948">
+    <link rel="stylesheet" type="text/css" href="https://images.zhcw.com/gt/gglwx/h5/css/basepc.css?v=202301050948">
+    <link rel="stylesheet" type="text/css" href="https://images.zhcw.com/gt/gglwx/h5/css/shigua.css?v=202301050948">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /*
+         *初始基础参数--data1
+        */
+		.sgq{width:91.8%;top:22.5%;left:4.2%;}
+		.cpjf img{margin:0 auto 5px;width:100%;}
+		.cpjj img{margin:0 auto;width:100%;}
+		.w2 .cq{width:16.5%;}
+		.cq .cpjj{margin:0px auto 0;width:80%;}
+		.cq01{top:17%;left:5.3%;}
+		.cq01 .cpjj{margin-top:25px}
+		.w3 .cq{width:8.5%;}
+		.w3 .cpjj{width:140%;}
+		.cq02{top:53%;left:9%;}
+		.cq03{top:53%;left:24%;}
+		.cq04{top:55.5%;left:33.7%;}
+		.cq05{top:64%;left:9%;}
+		.cq06{top:64%;left:24%;}
+		.cq07{top:65.5%;left:33.7%;}
+		.w3 .cqjh{top:54%;left:18%;width:5%;}
+		.w3 .cqjh01{top:65%;left:18%;width:5%;}
+		.w4 .cq{width:8%;}
+		.w4 .cpjj{width:100%;}
+		.cq08{top:20%;left:67%;}
+		.cq09{top:20%;left:81%;}
+		.w4  .wdhm .cq{width:30%;}
+		.w4  .wdhm .cq .cpjf{width:22%;float:left;}
+		.w4  .wdhm .cq .cpjj{width:62%;margin-right:6%;margin-top:3px;float:right;}
+		.cq10{top:33%;left:65%;}
+		.cq11{top:41.5%;left:65%;}
+		.cq12{top:50%;left:65%;}
+		.cq13{top:58.5%;left:65%;}
+		.cq14{top:67%;left:65%;}
+		.cq15{top:75.3%;left:65%;}
+		.cq16{top:84%;left:65%;}
+		.w3 .wayList3{top:52%;left:17%;width:10.5%;}
+		.w3 .wayList32{top:63%;left:17%;width:10.5%;}
+
+        .fd{width:91.8%!important;top:22.5%!important;left:4.2%!important;}
+        @media screen and (max-width:767px){
+            .fd{width:100%!important;top:15%!important;left:0!important;}
+        }
+        canvas{width:100%;position:absolute;left:0;top:0;}
+        canvas.hasmouse{cursor:url('https://images.zhcw.com/gt/gglwx/h5/images/public/o_pointer3.ico'),default;}
+    </style>
+</head>
+<body>
+<style>
+	.h-logo{
+		-webkit-box-sizing:initial;
+		-moz-box-sizing: initial;
+		box-sizing: initial;
+	}
+	.header .container,.footer .container {
+		width: 1000px!important;
+		margin: 0 auto;
+	}
+	@media (min-width: 1281px) {
+		.header .container,.footer .container {
+			width: 1200px!important;
+		}}
+	@media (min-width: 1681px) {
+		.header .container,.footer .container {
+			width: 1400px!important;
+		}}
+</style>    <div class="container g_content">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 g_md_8">
+                <div class="g_2 g_gglpm">
+                    <div class="g_1_mask hidden-xs">
+                        <div class="gm_box">
+                            <p class="gm_tips">很遗憾！您没有中奖！</p>
+                            <img src="https://images.zhcw.com/gt/gglwx/h5/images/public/close.png" class="gm_close">
+                            <div class="gm_btn">
+                                <span class="gm_more">更多游戏</span>
+                                <span class="gm_again">再来一次</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back"><img style="width: 100%;"></div>
+                    <div class="sgq" id="bb"> 
+                        <div class="gkq face" style="opacity:0;"><img src="" class="gk"/>
+                            <div class="w1"></div>
+                            <div class="w2"></div>
+                            <div class="w3"></div>
+                            <div class="w4"></div>
+                        </div>
+                        <div class="zgao face">
+                            <canvas id="canvas01" class="face"> 您使用的浏览器不支持canvas。 </canvas>
+                        </div>
+                        <div class="ydain"></div>
+                    </div>
+                    <div class="hzz hidden-lg hidden-md"></div>
+                    <div class="pyang" style="display: none">
+                        <div class="openBnt hidden-lg hidden-md" style="display:none;">开奖</div>
+                        <img src="" class="bg">
+                    </div>
+                    <div class="tsq hidden-lg hidden-md">声明：本游戏为在线模拟试刮，中奖概率与真实彩票不同，不提供真实奖金。</div>
+                </div>
+                <div class="g_4 hidden-xs">
+                    <span class="g_4_open">刮开</span>
+                    <span class="g_4_get g_4_dis">开奖</span>
+                    <span class="g_4_reset">再来一次</span>
+                </div>
+            </div>
+    </div>
+    <!--<link type="text/css" rel="stylesheet" href="https://ggl.zhcw.com/statics/css/footer.css">-->
+<script type="text/javascript" src="./js/bodystat.js"></script>    <script type="text/javascript" src="./js/jq.mobi.min.js"></script>
+    <script type="text/javascript" src="./js/layer/layer.m.js"></script>
+    <script type="text/javascript" src="./js/public.js"></script>
+    <script type="text/javascript" src="./js/shigua.canvas.js"></script>
+    <script>
+        /*
+         *自定义区域--初始基础图片参数--data2
+        */
+        var imgUrl = "https://images.zhcw.com/gt/gglwx/h5/images";
+        var imgw = 596;
+		var imgh = 682;
+        var img_gk = imgUrl+"/shigua/sg16/sgpy_01_gk.jpg";
+        var img_bg = imgUrl+"/shigua/sg16/sgpy_01.jpg";
+        var img__g = imgUrl+"/shigua/sg16/sgpy_01_g.jpg";
+        var gglName = "sqsm_sg";
+
+        var ww = $(window).width()<=640?$(window).width():640;
+        if(ua == "windows"){ww = ww*0.918;}
+		var wh = $(window).height();
+		var startClip = false;
+        var numon = "";
+
+        /*
+         *随机函数
+        */
+        function getRandom(min, max){
+            var r = Math.random() * (max - min);
+            var re = Math.round(r + min);
+            re = Math.max(Math.min(re, max), min);
+            return re;
+        }
+        /*
+         *判断增加中奖效果
+        */
+        var num1,num2,kjNum;
+        function panduan(){
+            $("div[class*='_win']").addClass("winNum");
+			$(".w2 div[class*='_win']").removeClass('winNum').find('img').addClass("winNum");
+			$(".w3 div[class*='_win']").removeClass('winNum').find('img').addClass("winNum");
+			$("div[class*='_zjNum']").addClass("ZjNum");
+			if(num1==$.int(KjNum[0])){
+				$("div[class*='_kj0']").addClass("ZjNum");
+			}
+			if(num2==$.int(KjNum[1])){
+				$("div[class*='_kj1']").addClass("ZjNum");
+			}
+        }
+        /*
+         *试刮信息页面渲染
+        */
+        function addHtml(dataObj){
+            var wayList2 = dataObj.Data.way2.options;
+			var wayList3 = dataObj.Data.way3.options;
+			var wayList32 = dataObj.Data.way3.options1;
+			var wayList4 = dataObj.Data.way4.options;
+			var wayInfo2 = "";
+			var win = dataObj.Data.wins;
+			var winFlag = false;
+            $.each(wayList3,function(i, v){
+            	if (v == "sqsm") {
+                    winFlag = true;
+                }
+            })
+            $.each(wayList32,function(i, j){
+            	if (j == "sqsm") {
+                    winFlag = true;
+                }
+            })                                             
+            for (k in wayList4) {
+                if (wayList4[k]["no."] == "sqsm") {
+                    winFlag = true;
+                }
+            }
+			if(wayList2.length){
+				var winClass = "";
+				if(wayList2[0] == "dl" || wayList2[0] == "md" ||wayList2[0] == "qq"||wayList2[0] == "xl") {
+					var str = '<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w2jf/'+wayList2[0]+'.png"></div>'
+				}else{
+					var str = '<div class="cpjj"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w2jf/'+wayList2[0]+'.png"></div>';
+					winClass = " _win";
+				}
+				wayInfo2 += '<div class="cq cq01 '+winClass+'">'+str+'</div>';
+			}
+			$(".w2").html(wayInfo2);
+			var wayInfo3 = "";
+			if(wayList3) {
+				var winClass1 = winClass11 = "";
+				if (wayList3.length == 3) {
+					if($.int(wayList3[0]) + $.int(wayList3[1]) == 10) {
+						winClass1 = " _win";
+						winClass11 = " _zjNum";
+					}
+                	if (winFlag && winFlag == true) {
+						winClass1 = " _win";
+						winClass11 = " _zjNum";
+                    }
+					wayInfo3+= '<div class="cq cq02 '+winClass11+'">'
+					      	+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jf/'+wayList3[0]+'.png"></div>'
+					      	+'</div>'
+					      	+'<div class="cq cqjh">'
+					      	+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jf/jh.png"></div>'
+					      	+'</div>'
+					      	+'<div class="cq cq03 '+winClass11+'">'
+					      	+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jf/'+wayList3[1]+'.png"></div>'
+					      	+'</div>'
+					      	+'<div class="cq cq04 '+winClass1+'">'
+					      	+'<div class="cpjj"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jj/'+wayList3[2]+'.png"></div>'
+					      	+'</div>';
+				}else if (wayList3.length == 2) {
+						winFlag = true;
+						var winClass1 = winClass11 = "";
+						winClass1 = " _win";
+						winClass11 = " _zjNum";
+						wayInfo3+= '<div class="cq cq03 wayList3'+winClass11+'">'
+			      				+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w4jf/'+wayList3[0]+'.png"></div>'
+				      			+'</div>'
+				      			+'<div class="cq cq04 '+winClass1+'">'
+				      			+'<div class="cpjj"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jj/'+wayList3[1]+'.png"></div>'
+				      			+'</div>';
+				}
+			}
+			if (wayList32) {
+				if (wayList32.length == 3) {
+					var winClass2 = winClass22 = "";
+					if($.int(wayList32[0]) + $.int(wayList32[1]) == 10) {
+						winClass2 = " _win";
+						winClass22 = " _zjNum";
+					}
+                    if (winFlag && winFlag == true) {
+						winClass2 = " _win";
+						winClass22 = " _zjNum";
+                    }
+					wayInfo3 += '<div class="cq cq05 '+winClass22+'">'
+				      	+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jf/'+wayList32[0]+'.png"></div>'
+				      	+'</div>'
+				      	+'<div class="cq cqjh01">'
+				      	+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jf/jh.png"></div>'
+				      	+'</div>'
+				      	+'<div class="cq cq06 '+winClass22+'">'
+				      	+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jf/'+wayList32[1]+'.png"></div>'
+				      	+'</div>'
+				      	+'<div class="cq cq07 '+winClass2+'">'
+				      	+'<div class="cpjj"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jj/'+wayList32[2]+'.png"></div>'
+				      	+'</div>';
+				}else if (wayList32.length == 2) {
+					winFlag = true;
+					var winClass2 = winClass22 = "";
+						winClass2 = " _win";
+						winClass22 = " _zjNum";
+					wayInfo3+= '<div class="cq wayList32">'
+				      		+'<div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w4jf/'+ wayList32[0] +'.png"></div>'
+				      		+'</div>'
+				      		+'<div class="cq cq07 '+winClass2+'">'
+				      		+'<div class="cpjj"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w3jj/'+wayList32[1]+'.png"></div>'
+				      		+'</div>';
+				}
+			}
+			$(".w3").html(wayInfo3);
+			var wayInfo4 = '';
+			if(wayList4.length){
+				KjNum = dataObj.Data.way4.wins1;
+				for(var i=0;i<KjNum.length;i++){
+					winClass = " _kj"+i;
+					wayInfo4 += '<div class="cq cq0'+(8+i)+' '+winClass+'"><div class="cpjf"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w4jf/'+KjNum[i]+'.png"></div></div>';
+				}
+				wayInfo4 += '<div class="wdhm">';
+				for(var i=0;i<wayList4.length;i++){
+					var winClass = "";
+					var zjClass = "";
+					if($.inArray(wayList4[i]["no."],KjNum)) {
+						winClass = "_win";
+						zjClass = "_zjNum";
+					 	if($.int(wayList4[i]["no."])==$.int(KjNum[0])){
+							num1=$.int(wayList4[i]["no."]);
+						}
+						if($.int(wayList4[i]["no."])==$.int(KjNum[1])){
+							num2=$.int(wayList4[i]["no."]);
+						}
+					}
+                    if (winFlag && winFlag == true) {
+                        winClass = " _win";
+                    }
+					wayInfo4 += '<div class="cq cq'+(i+10)+'">'
+					+'<div class="cpjf '+zjClass+'"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w4jf/'+wayList4[i]["no."]+'.png"></div>'
+					+'<div class="cpjj '+winClass+'"><img src="https://images.zhcw.com/gt/gglwx/h5/images/shigua/sg16/w4jj/'+wayList4[i]["value"]+'.png"></div>'
+					+'</div>';
+				}
+				wayInfo4 += '</div>';
+				$(".w4").html(wayInfo4);
+				if(win != undefined && win != "") {	   		
+		   			numon = (win || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+		   		}
+			}
+        }
+    </script>
+    <script type="text/javascript" src="./js/shigua.public.js?v=202301050948"></script>
+</body>
+</html>
